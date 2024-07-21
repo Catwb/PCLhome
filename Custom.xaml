@@ -1,4 +1,10 @@
-﻿<local:MyCard Title="一些东西" Margin="0,0,0,15" CanSwap="True" IsSwaped="true">
+﻿<local:MyCard Title="" Margin="0,0,0,0" CanSwap="false" IsSwaped="false">
+	<StackPanel Margin="0,0,0,0">
+		<local:MyHint  IsWarn="false" Text="本页面由绮曜维护" />
+	</StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="一些东西" Margin="0,0,0,15" CanSwap="True" IsSwaped="true">
 	<StackPanel Margin="25,40,23,15">
 		<TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
 			Text="你好，这里是绮曜，希望你用的开心。" />
@@ -15,22 +21,44 @@
 			<local:MyButton Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
 				Text="二次元图片" EventType="打开网页" EventData="http://www.98qy.com/sjbz/api.php" />
 		</StackPanel>
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+			<local:MyButton Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+				Text="来个回声洞？" EventType="弹出窗口" EventData="回声洞|{cave}" />
+			<local:MyButton Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+				Text="你也许不知道" EventType="弹出窗口" EventData="你知道吗？|{hint}" />
+		</StackPanel>
+	</StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="PCL内部工具" Margin="0,0,0,15" CanSwap="True" IsSwaped="true">
+	<StackPanel Margin="25,40,23,15">
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+			<local:MyButton Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+				Text="清理PCL的垃圾" EventType="清理垃圾" />
+			<local:MyButton Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+				Text="内存优化" EventType="内存优化" />
+		</StackPanel>
 	</StackPanel>
 </local:MyCard>
 
 <local:MyCard Title="更新主页" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
 	<StackPanel Margin="25,40,23,15">
 		<TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
-			Text="作者：绮曜&#xa;版本：0.0.2" />
-			<local:MyHint Text="注意，您无需手动更新，PCL每次开启都会自动更新。" />
+			Text="作者：绮曜&#xa;版本：0.0.3" />
+		<local:MyHint Text="注意，您无需手动刷新主页，PCL每次开启都会自动更新。（我保证你可以检查到更新）" />
+		<local:MyButton Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+			Text="刷新主页" EventType="刷新主页" />
 	</StackPanel>
 </local:MyCard>
 
 <local:MyCard Title="更新日志" Margin="0,0,0,15" CanSwap="True" IsSwaped="true">
 	<StackPanel Margin="25,40,23,15">
 		<TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
-			Text="0.0.1&#xa;- 如你所见" />
+			Text="0.0.3&#xa;- 添加回声洞，你知道吗，清理垃圾，内存优化，以及一些小功能。" />
 		<TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
-			Text="&#xa;0.0.2&#xa;- 编写自动更新脚本，添加更新日志。" />
+			Text="0.0.2&#xa;- 编写自动更新脚本，添加更新日志。" />	
+		<TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+			Text="0.0.1&#xa;- 如你所见" />
+
 	</StackPanel>
 </local:MyCard>
