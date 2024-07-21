@@ -21,7 +21,16 @@
 <local:MyCard Title="更新主页" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
 	<StackPanel Margin="25,40,23,15">
 		<TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
-			Text="作者：绮曜&#xa;版本：0.0.1" />
-			<local:MyHint Text="注意，我并不会编写自动更新。" />
+			Text="作者：绮曜&#xa;版本：0.0.2" />
+			<local:MyHint Text="注意，您无需手动更新，PCL每次开启都会自动更新。" />
+	</StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="更新日志" Margin="0,0,0,15" CanSwap="True" IsSwaped="true">
+	<StackPanel Margin="25,40,23,15">
+		<TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+			Text="0.0.1&#xa;- 如你所见" />
+		<TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+			Text="&#xa;0.0.2&#xa;- 编写自动更新脚本，添加更新日志。" />
 	</StackPanel>
 </local:MyCard>
